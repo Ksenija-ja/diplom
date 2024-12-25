@@ -1,0 +1,38 @@
+services:
+  mysql:
+    image: mysql:8.0.34
+    container_name: mysql_db
+    environment:
+      MYSQL_ROOT_PASSWORD: root_password
+      MYSQL_DATABASE: app
+      MYSQL_USER: app
+      MYSQL_PASSWORD: pass
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+
+  postgres:
+    image: postgres:13-alpine
+    container_name: postgres_db
+    environment:
+      POSTGRES_DB: app
+      POSTGRES_USER: app
+      POSTGRES_PASSWORD: pass
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+  bank_emulator:
+    image: gate-simulator
+    container_name: bank_emulator
+    ports:
+      - "9999:9999"
+    environment:
+      SPRING_CREDIT_GATE_URL: http://localhost:9999/credit
+      SPRING_PAYMENT_GATE_URL: http://localhost:9999/payment
+
+volumes:
+  mysql_data:
+  postgres_data:
