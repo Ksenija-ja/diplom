@@ -24,11 +24,13 @@ services:
     volumes:
       - postgres_data:/var/lib/postgresql/data
 
-  bank_emulator:
-    image: gate-simulator
-    container_name: bank_emulator
+
+  gate-simulator:
+    build:
+      context: ./gate-simulator  # Убедитесь, что путь правильный
+      dockerfile: Dockerfile.txt
     ports:
-      - "9999:9999"
+      - "3000:3000"
     environment:
       SPRING_CREDIT_GATE_URL: http://localhost:9999/credit
       SPRING_PAYMENT_GATE_URL: http://localhost:9999/payment

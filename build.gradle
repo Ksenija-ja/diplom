@@ -24,7 +24,7 @@ repositories {
 
 dependencies {
     testImplementation 'org.junit.jupiter:junit-jupiter:5.7.0'
-    testImplementation 'com.codeborne:selenide:6.17.2'
+    testImplementation 'com.codeborne:selenide:7.5.1'
     testImplementation 'com.github.javafaker:javafaker:1.0.2'
     testRuntimeOnly 'org.slf4j:slf4j-simple:1.7.32'
     testImplementation 'io.qameta.allure:allure-selenide:2.20.1'
