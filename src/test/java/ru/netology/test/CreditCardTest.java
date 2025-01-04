@@ -101,7 +101,7 @@ public class CreditCardTest {
     }
 
     @Test
-    public void payWithACardWithTheWrongMonth() {
+    public void creditPaymentWithACardWithTheWrongMonth() {
         PaymentTypesPage page = new PaymentTypesPage();
         page.paymentTypesPage();
         var creditCardPage = page.creditPayment();
@@ -113,7 +113,7 @@ public class CreditCardTest {
     }
 
     @Test
-    public void payWithACreditCardWithAnEmptyMonth() {
+    public void creditPaymentWithACreditCardWithAnEmptyMonth() {
         PaymentTypesPage page = new PaymentTypesPage();
         page.paymentTypesPage();
         var creditCardPage = page.creditPayment();
@@ -136,7 +136,7 @@ public class CreditCardTest {
     }
 
     @Test
-    public void creditCardPaymentWithEmptyYear() {
+    public void creditPaymentWithEmptyYear() {
         PaymentTypesPage page = new PaymentTypesPage();
         page.paymentTypesPage();
         var creditCardPage = page.creditPayment();
@@ -147,7 +147,7 @@ public class CreditCardTest {
     }
 
     @Test
-    public void rusLanguageNamePaymentByCreditCard() {
+    public void creditPaymentRusLanguageName() {
         PaymentTypesPage page = new PaymentTypesPage();
         page.paymentTypesPage();
         var creditCardPage = page.creditPayment();
@@ -158,7 +158,7 @@ public class CreditCardTest {
     }
 
     @Test
-    public void digitsNameCardCreditPayment() {
+    public void creditPaymentDigitsNameCard() {
         PaymentTypesPage page = new PaymentTypesPage();
         page.paymentTypesPage();
         var creditCardPage = page.creditPayment();
@@ -170,7 +170,7 @@ public class CreditCardTest {
 
 
     @Test
-    public void specSymbolsNameCreditPayment() {
+    public void creditPaymentSpecSymbolsName() {
         PaymentTypesPage page = new PaymentTypesPage();
         page.paymentTypesPage();
         var creditCardPage = page.creditPayment();
@@ -181,7 +181,7 @@ public class CreditCardTest {
     }
 
     @Test
-    public void emptyNameCreditPayment() {
+    public void creditPaymentEmptyName() {
         PaymentTypesPage page = new PaymentTypesPage();
         page.paymentTypesPage();
         var creditCardPage = page.creditPayment();
@@ -192,7 +192,7 @@ public class CreditCardTest {
     }
 
     @Test
-    public void twoDigitCreditPaymentCode() {
+    public void creditPaymentTwoDigitCode() {
         PaymentTypesPage page = new PaymentTypesPage();
         page.paymentTypesPage();
         var creditCardPage = page.creditPayment();
@@ -203,7 +203,7 @@ public class CreditCardTest {
     }
 
     @Test
-    public void oneDigitInTheCreditPaymentCode() {
+    public void creditPaymentOneDigitInTheCode() {
         PaymentTypesPage page = new PaymentTypesPage();
         page.paymentTypesPage();
         var creditCardPage = page.creditPayment();
@@ -214,7 +214,7 @@ public class CreditCardTest {
     }
 
     @Test
-    public void emptyFieldInTheCreditCardCode() {
+    public void creditPaymentEmptyFieldInTheCardCode() {
         PaymentTypesPage page = new PaymentTypesPage();
         page.paymentTypesPage();
         var creditCardPage = page.creditPayment();
@@ -226,7 +226,7 @@ public class CreditCardTest {
     }
 
     @Test
-    public void specSymbolsCodeCreditCardPayment() {
+    public void creditPaymentSpecSymbolsCodeCard() {
         PaymentTypesPage page = new PaymentTypesPage();
         page.paymentTypesPage();
         var creditCardPage = page.creditPayment();
@@ -237,7 +237,7 @@ public class CreditCardTest {
     }
 
     @Test
-    public void emptyAllFieldsCreditCardPayment() {
+    public void creditPaymentEmptyAllFieldsCard() {
         PaymentTypesPage page = new PaymentTypesPage();
         page.paymentTypesPage();
         var creditCardPage = page.creditPayment();
