@@ -28,8 +28,5 @@
 
 
 
-![image-20250104203516215](C:\Users\Ignat\AppData\Roaming\Typora\typora-user-images\image-20250104203516215.png)
 
-![image-20250104203536897](C:\Users\Ignat\AppData\Roaming\Typora\typora-user-images\image-20250104203536897.png)
 
-![image-20250104203547698](C:\Users\Ignat\AppData\Roaming\Typora\typora-user-images\image-20250104203547698.png)
